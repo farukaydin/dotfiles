@@ -1,0 +1,7 @@
+[user]
+  name = Faruk AYDIN
+  email = omerfaruk26@gmail.com
+
+[core]
+  excludesfile = ~/.gitignore_global
+  editor = subl -n -w

@@ -8,3 +8,6 @@ for package in ${stow_packages}; do
   echo "Installing ${package}"
   ${stow} ${package}
 done
+
+# Use zsh as default shell
+chsh -s /bin/zsh

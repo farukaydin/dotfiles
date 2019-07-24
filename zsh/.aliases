@@ -12,6 +12,7 @@ alias gfo='git fetch origin'
 alias gphm='git push heroku master'
 alias gr='git remote -v'
 alias grb='git rebase -i HEAD~2'
+alias grh='git reset --hard'
 
 
 # # Rails aliases

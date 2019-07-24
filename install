@@ -10,4 +10,4 @@ for package in ${stow_packages}; do
 done
 
 # Use zsh as default shell
-chsh -s $(which zsh)
+chsh -s /bin/zsh

@@ -2,6 +2,8 @@ if [[ -r ~/.aliases ]]; then
   source ~/.aliases
 fi
 
+setopt PROMPT_SUBST
+
 re-source(){
   source ~/.zshrc
 }
@@ -15,9 +17,17 @@ ruby_version() {
 }
 
 ruby_prompt() {
-  echo "ruby-$(ruby_version)"
+  if [[ -n $(ruby_version) ]]; then
+    echo "ruby-$(ruby_version)"
+  fi
 }
 
+git_prompt() {
+  branch=$(git symbolic-ref --short HEAD 2> /dev/null)
+  if [[ -n $branch ]]; then
+    echo "(${branch})"
+  fi
+}
 
-PROMPT="%F{yellow}$(current_directory) "
-RPROMPT="%F{green}$(ruby_prompt)%f"
+PROMPT='%F{yellow}$(current_directory) %F{green}$(git_prompt)%f '
+RPROMPT='%F{green}$(ruby_prompt)%f'

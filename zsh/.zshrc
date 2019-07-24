@@ -1,3 +1,7 @@
+if [[ -r ~/.aliases ]]; then
+  source ~/.aliases
+fi
+
 re-source(){
   source ~/.zshrc
 }

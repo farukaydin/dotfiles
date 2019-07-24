@@ -1,0 +1,38 @@
+# Git aliases
+alias gs='git status'
+alias gb='git branch'
+alias gd='git diff'
+alias ga='git add -A'
+alias gc='git checkout'
+alias gcm='git commit -m'
+alias gpr='git pull --rebase origin develop'
+alias gpo='git push origin'
+alias gpom='git push origin master'
+alias gfo='git fetch origin'
+alias gphm='git push heroku master'
+alias gr='git remote -v'
+alias grb='git rebase -i HEAD~2'
+
+
+# # Rails aliases
+# alias rs='bundle exec rails s'
+# alias rc='bundle exec rails c'
+
+# # AWS
+# alias ebi='eb init --interactive'
+
+# # Rake
+# alias rake='bundle exec rake'
+# alias migrate='bundle exec rake db:migrate'
+
+# # Rspec
+# alias rspec='bundle exec rspec'
+
+# # Rubocop
+# alias rubocop='bundle exec rubocop'
+
+# # Bundle exec
+# alias be='bundle exec'
+
+# # Ruby
+# alias ruby='bundle exec ruby'

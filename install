@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install packages with brew
+brew bundle
+
 stow=`which stow`
 stow_root=`dirname $0`
 stow_packages=`find ${stow_root} -type d -depth 1 -not -name ".*" -exec basename {} \;`

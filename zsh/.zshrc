@@ -13,7 +13,7 @@ current_directory(){
 }
 
 ruby_version() {
-  ruby -v | awk '{print $2}' | cut -d p -f 1
+  rbenv version | cut -d ' ' -f 1
 }
 
 ruby_prompt() {

@@ -1,3 +1,5 @@
 brew "stow"
 brew "zsh"
+brew "git"
 brew "rbenv"
+brew "coreutils"

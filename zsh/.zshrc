@@ -31,3 +31,5 @@ git_prompt() {
 
 PROMPT='%F{green}➜  %F{yellow}$(current_directory) %F{green}$(git_prompt)%f '
 RPROMPT='%F{green}$(ruby_prompt)%f'
+
+eval "$(rbenv init -)"

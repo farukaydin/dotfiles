@@ -12,5 +12,8 @@ for package in ${stow_packages}; do
   ${stow} ${package}
 done
 
+# Install sublime settings
+`~/dotfiles/sublime/install.sh`
+
 # Use zsh as default shell
 chsh -s /bin/zsh

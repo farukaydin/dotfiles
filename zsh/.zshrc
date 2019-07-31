@@ -29,6 +29,11 @@ git_prompt() {
   fi
 }
 
+gpc() {
+  current_branch=$(git branch --show-current)
+  $(git push origin ${current_branch} $1)
+}
+
 PROMPT='%F{green}➜  %F{yellow}$(current_directory) %F{green}$(git_prompt)%f '
 RPROMPT='%F{green}$(ruby_prompt)%f'
 

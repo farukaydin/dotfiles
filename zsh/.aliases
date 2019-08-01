@@ -26,8 +26,8 @@ alias rc='bundle exec rails c'
 # alias rake='bundle exec rake'
 # alias migrate='bundle exec rake db:migrate'
 
-# # Rspec
-# alias rspec='bundle exec rspec'
+# Rspec
+alias rspec='bundle exec rspec'
 
 # # Rubocop
 # alias rubocop='bundle exec rubocop'

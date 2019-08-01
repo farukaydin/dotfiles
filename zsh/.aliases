@@ -15,9 +15,9 @@ alias grb='git rebase -i HEAD~2'
 alias grh='git reset --hard'
 
 
-# # Rails aliases
-# alias rs='bundle exec rails s'
-# alias rc='bundle exec rails c'
+# Rails aliases
+alias rs='bundle exec rails s'
+alias rc='bundle exec rails c'
 
 # # AWS
 # alias ebi='eb init --interactive'

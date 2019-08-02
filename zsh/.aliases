@@ -29,8 +29,8 @@ alias rc='bundle exec rails c'
 # Rspec
 alias rspec='bundle exec rspec'
 
-# # Rubocop
-# alias rubocop='bundle exec rubocop'
+# Rubocop
+alias rubocop='bundle exec rubocop'
 
 # # Bundle exec
 # alias be='bundle exec'

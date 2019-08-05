@@ -34,6 +34,10 @@ gpc() {
   $(git push origin ${current_branch} $1)
 }
 
+remove_pid() {
+  rm /usr/local/var/postgres/postmaster.pid
+}
+
 PROMPT='%F{green}➜  %F{yellow}$(current_directory) %F{green}$(git_prompt)%f '
 RPROMPT='%F{green}$(ruby_prompt)%f'
 

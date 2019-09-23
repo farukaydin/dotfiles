@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Install packages with brew
+# Install packages with Brewfile
+brew update
 brew bundle
 
 stow=`which stow`
@@ -16,4 +17,4 @@ done
 `~/dotfiles/sublime/install.sh`
 
 # Use zsh as default shell
-chsh -s /bin/zsh
+sudo -s chsh -s /bin/zsh

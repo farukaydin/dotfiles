@@ -5,6 +5,7 @@ brew "rbenv"
 brew "coreutils"
 
 tap "homebrew/cask"
+cask "iterm2"
 cask "Spectacle"
 cask "Telegram"
 cask "sublime-text"

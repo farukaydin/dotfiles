@@ -21,4 +21,4 @@ done
 `~/dotfiles/sublime/install.sh`
 
 # Use zsh as default shell
-sudo -s chsh -s /bin/zsh
+chsh -s /bin/zsh 

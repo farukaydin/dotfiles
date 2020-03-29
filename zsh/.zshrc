@@ -34,6 +34,11 @@ gpc() {
   $(git push origin ${current_branch} $1)
 }
 
+kill_rails_server() {
+  rails_process=$(ps aux | grep rails | grep -v grep | awk '{print $2}')
+  kill -9 $rails_process
+}
+
 remove_pid() {
   rm /usr/local/var/postgres/postmaster.pid
 }
